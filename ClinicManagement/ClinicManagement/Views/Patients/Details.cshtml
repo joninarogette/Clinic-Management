@@ -1,0 +1,90 @@
+﻿@model ClinicManagement.Models.Patient
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Patient</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientLast)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientLast)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientFirst)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientFirst)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientMid)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientMid)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientGender)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientGender)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientBDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientBDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientAddrss)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientAddrss)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PatientClass)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PatientClass)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PCollege.CollegeCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PCollege.CollegeCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.PatientID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

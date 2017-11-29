@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="e1548974b3554410b3da949f593f790a" Name="Diagram1">
+        <EntityTypeShape EntityType="dbClinicManagementModel.Inventory" Width="1.5" PointX="3.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.MedCheckDetail" Width="1.5" PointX="6.625" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.MedCheckHeader" Width="1.5" PointX="4.375" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.Patient" Width="1.5" PointX="5.375" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.PCollege" Width="1.5" PointX="7.625" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.Staff" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="dbClinicManagementModel.Supply" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_Inventory_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_Inventory_Supply" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_MedCheckHeader_Inventory" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_MedCheckDetail_MedCheckHeader" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_MedCheckHeader_Patient" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_MedCheckHeader_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="dbClinicManagementModel.FK_Patient_PCollege" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
